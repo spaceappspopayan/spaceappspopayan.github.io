@@ -1,150 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="utf-8">
-  <title>NASA SpaceApps Popayán Colombia </title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>NASA SpaceApps Popayán Colombia</title>
   <meta content="NASA Space Apps Popayán es un evento abierto a estudiantes, profesionales y curiosos que buscan impulsar la ciencia, la tecnología y la exploración espacial." name="description">
 
-  <!-- Favicons -->
   <link href="img/favicon.ico" rel="icon">
   <link href="img/favicon.png" rel="apple-touch-icon">
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.2/venobox.min.css">
 
-  <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/venobox/venobox.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-  <!-- Main Stylesheet File -->
   <link href="css/style-min.css" rel="stylesheet">
-
-  <style>
-    /* Add CSS styles for the dynamic lines */
-    .title-container {
-      position: relative;
-      text-align: center;
-    }
-
-    .title-container::before,
-    .title-container::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background-color: #ffffff; /* Change the line color as needed */
-      animation-duration: 2s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-    }
-
-    .title-container::before {
-      top: -20px; /* Adjust the distance of the upper line from the title */
-      animation-name: moveLineLeft;
-    }
-
-    .title-container::after {
-      bottom: -20px; /* Adjust the distance of the lower line from the title */
-      animation-name: moveLineRight;
-    }
-
-    /* Add the CSS animation keyframes */
-    @keyframes moveLineLeft {
-      0% { transform: translateX(100%); }
-      100% { transform: translateX(-100%); }
-    }
-
-    @keyframes moveLineRight {
-      0% { transform: translateX(-100%); }
-      100% { transform: translateX(100%); }
-    }
-    /* logo ppal size */
-    #logobg img {
-      width: 200px; /* Set your default logo width here */
-    }
-
-    /* Media query for screens smaller than or equal to 768px (typical mobile devices) */
-    @media (max-width: 768px) {
-      #logobg img {
-        width: 120px; /* Set the smaller logo width for mobile devices */
-      }
-    }
-
-    /* Screen reader only text */
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-    }
-
-    /* Social links spacing improvements */
-    .social-links {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 6px;/* Espaciado uniforme entre iconos */
-    }
-
-    .social-links a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      transition: all 0.3s ease;
-      position: relative;
-    }
-
-    /* Hover effects for social links */
-    .social-links a:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 5px 15px rgba(248, 34, 73, 0.3);
-    }
-
- 
-    @media (max-width: 480px) {
-      .social-links {
-        gap: 10px;
-      }
-      
-      .social-links a {
-        width: 35px;
-        height: 35px;
-      }
-    }
-
-  </style>
-
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js"></script>
-  
 </head>
 
 <body>
-
-  <!--==========================
-    Header
-  ============================-->
   <header id="header">
-    <div class="container">
-
-      <div id="logo" class="pull-left">
-        <!-- Uncomment below if you prefer to use a text logo -->
-        <!-- <h1><a href="#main">P<span>o</span>p</a></h1> -->
-        <a href="#intro" class="scrollto" aria-label="NASA SpaceApps Popayán - Ir al inicio"><img src="img/logo_inter.png" alt="Logo NASA SpaceApps Popayán - Hackathon Internacional de Ciencia y Tecnología" title="NASA SpaceApps Popayán"></a>
+    <div class="container header-inner">
+      <div class="pull-left" id="logo">
+        <a href="/" aria-label="NASA SpaceApps Popayán - Ir al inicio">
+          <img src="img/logo_inter.png" alt="Logo NASA SpaceApps Popayán - Hackathon Internacional de Ciencia y Tecnología" title="NASA SpaceApps Popayán">
+        </a>
       </div>
 
       <nav id="nav-menu-container">
@@ -154,37 +37,33 @@
           <li><a href="#speakers">Embajadores</a></li>
           <li><a href="#schedule">Horario</a></li>
           <li><a href="#venue">Lugar</a></li>
-          <!-- <li><a href="#hotels">Hotels</a></li> -->
           <li><a href="#gallery">Galeria</a></li>
           <li><a href="#supporters">Sponsors</a></li>
           <li><a href="#requirements">Requisitos</a></li>
           <li><a href="#contact">Contacto</a></li>
           <li class="buy-tickets"><a href="https://forms.gle/9WuQ2nqAWwXj1vUp6" aria-label="Registrarse para NASA SpaceApps Popayán 2025 - Formulario de inscripción" target="_blank" rel="noopener noreferrer">Registrarme</a></li>
         </ul>
-      </nav><!-- #nav-menu-container -->
+      </nav>
     </div>
-  </header><!-- #header -->
+  </header>
 
-  <!--==========================
-    Intro Section
-  ============================-->
-
-  <!-- Intro Section -->
   <section id="intro">
     <div class="intro-container wow fadeIn">
-      <hr><hr>
-      <div id="logobg" class="pull-left">
-        <a href="#intro" class="scrollto" aria-label="NASA SpaceApps Popayán - Logo principal del evento"><img src="img/logo_pop.png" alt="Logo oficial NASA SpaceApps Popayán 2025 - Hackathon de exploración espacial" title="NASA SpaceApps Popayán 2025"></a>
+      <div id="logobg" class="mb-5">
+        <img src="img/logo_pop.png" alt="Logo oficial NASA SpaceApps Popayán 2025 - Hackathon de exploración espacial" aria-label="NASA SpaceApps Popayán - Logo principal del evento"">
       </div>
-      <hr><hr>
+
       <div class="title-container">
         <h1 class="mb-4 pb-0">NASA <span>SpaceApps</span> Popayán 🇨🇴</h1>
         <p class="mb-4 pb-0">Del 5 al 6 Octubre, Popayán.</p>
       </div>
-      <hr>
-      <p class="mb-4 pb-0" style="font-size: 14px;">¡Únete a una emocionante <span style="color: #f82249;">hackathon internacional</span> organizado por la NASA! 🚀</p>
-  
+
+      <p class="mb-4 pb-0" style="font-size: 14px;">
+        ¡Únete a una emocionante <span style="color: #f82249;">hackathon internacional</span> organizado por la NASA! 🚀
+      </p>
+
       <a href="#about" class="about-btn scrollto">Acerca del evento</a>
+
       <div class="social-links">
         <a href="https://twitter.com/SpaceAppsPPN" aria-label="Síguenos en Twitter - NASA SpaceApps Popayán" class="twitter" target="_blank" rel="noopener noreferrer">
           <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -203,19 +82,11 @@
           <span class="sr-only">LinkedIn</span>
         </a>
       </div>
-     
-     
-</div>
-      <hr><hr>
     </div>
-  </section>
+    <hr><hr>
   </section>
 
   <main id="main">
-
-    <!--==========================
-      About Section
-    ============================-->
     <section id="about">
       <div class="container">
         <div class="row">
@@ -228,7 +99,7 @@
           </div>
           <div class="col-lg-3">
             <h3>Lugar</h3>
-            <p>Centro de Convenciones Casa de La Moneda</p>
+            <a class="place-link" href="https://maps.app.goo.gl/hb5hb5MuG24QJ3oi8" rel="noopener noreferrer" target="_blank">Centro de Convenciones Casa de La Moneda</a>
           </div>
           <div class="col-lg-3">
             <h3>Cuándo</h3>
@@ -237,177 +108,55 @@
         </div>
       </div>
     </section>
+  <section id="speakers" class="wow fadeInUp">
+    <div class="container">
+      <div class="section-header">
+        <h2>EMBAJADORES NASA SPACE APPS</h2>
+      </div>
 
-
-    <!--==========================
-    INICIO DE MOSAICOS
-    ============================-->
-<!-- Add the PapaParse library --><!-- Add the PapaParse library -->
-<script src="js/papaparse.min.js"></script>
-<style>
-  .speaker-container {
-    width: 100%;
-    padding-bottom: 100%;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .speaker-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  /* Establecer una altura fija para el elemento que contiene el nombre */
-  .speaker .details h3 {
-    height: 30px; /* Puedes ajustar este valor según tus necesidades */
-    position: relative;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Estilos para la sombra */
-  .speaker .details h3::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0%; /* Ajusta este valor para controlar la altura de la sombra */
-    border-top: 0px solid transparent; /* Ajusta el grosor para controlar la altura de la sombra */
-    border-bottom: 0px solid rgba(0, 0, 0, 0); /* Cambia el valor alfa para ajustar la intensidad de la sombra */
-  }
-
-  /* Texto del nombre en la parte superior de la sombra */
-  .speaker .details h3 a {
-    position: relative;
-    z-index: 1;
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    color: white; /* Cambia el color del texto si es necesario */
-  }
-  /* Estilos para mostrar las credenciales */
-  .speaker .credentials {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-      /* Agregar la clase 'has-shadow' cuando el mouse esté encima */
-      .speaker-container.has-shadow .details h3::before {
-      height: 100%;
-      border-bottom: 15px solid rgba(0, 0, 0, 0.7); /* Cambiar alfa para intensidad de la sombra */
-    }
-</style>
-
-
-
-<!-- Sección principal para los embajadores del evento, con animación al aparecer (fadeInUp) -->
-<section id="speakers" class="wow fadeInUp">
-  <!-- Contenedor principal que agrupa el contenido de la sección -->
-  <div class="container">
-    <!-- Cabecera de la sección, contiene el título y una descripción -->
-    <div class="section-header">
-      <h2>EMBAJADORES NASA SPACE APPS</h2> <!-- Título de la sección -->
-      <p>Nuestros embajadores y mentores que hacen posible este evento</p> <!-- Descripción breve de la sección -->
+      <div id="speakers-wrapper" class="speakers-wrapper"></div>
     </div>
-
-    <!-- Contenedor para los embajadores, donde se añadirán dinámicamente -->
-    <div class="row justify-content-center" id="speakersRow">
-      <!-- Los embajadores serán añadidos aquí dinámicamente -->
-    </div>
-  </div>
-</section>
-
+  </section>
 <script>
   function displaySpeakers(speakers) {
-    const speakersRow = document.getElementById('speakersRow');
+    const speakersWrapper = document.querySelector('#speakers-wrapper');
 
-    speakers.forEach((speaker) => {
-      const speakerCol = document.createElement('div');
-      speakerCol.className = 'col-lg-3 col-md-8';
+    speakers.forEach(({image, name, organization}) => {
+      const $card = document.createElement('div')
+      $card.className = 'speaker-card'
 
-      const credentialsDiv = document.createElement('div');
-      credentialsDiv.className = 'credentials';
+      const $image = document.createElement('img')
+      $image.className = 'speaker-image'
+      $image.src = image
+      $image.alt = `Imagen del embajador ${name}`
 
-      const credentialsText = document.createElement('p');
-      credentialsText.textContent = `Nombre: ${speaker.name}\nCredenciales: ${speaker.credentials}`;
-      credentialsDiv.appendChild(credentialsText);
+      const $infoWrapper = document.createElement('div')
+      $infoWrapper.className = 'info-wrapper'
 
-      const speakerDiv = document.createElement('div');
-      speakerDiv.className = 'speaker';
-      
-      const speakerContainer = document.createElement('div');
-      speakerContainer.className = 'speaker-container';
+      const $name = document.createElement('h3')
+      $name.className = 'speaker-name'
+      $name.textContent = name
 
-      // Mostrar las credenciales cuando el mouse esté encima de la imagen
-      speakerContainer.addEventListener('mouseenter', () => {
-        speakerContainer.classList.add('has-shadow');
-        credentialsDiv.style.display = 'flex';
-      });
+      const $organization = document.createElement('p')
+      $organization.className = 'speaker-organization'
+      $organization.textContent = organization
 
-      // Ocultar las credenciales cuando el mouse deje de estar encima de la imagen
-      speakerContainer.addEventListener('mouseleave', () => {
-        speakerContainer.classList.remove('has-shadow');
-        credentialsDiv.style.display = 'none';
-      });
+      $infoWrapper.append($name, $organization)
 
-      const img = document.createElement('img');
-      img.src = speaker.image;
-      img.alt = speaker.name;
+      $card.append($image, $infoWrapper)
 
-      const detailsDiv = document.createElement('div');
-      detailsDiv.className = 'details';
-
-      const h3 = document.createElement('h3');
-      const a = document.createElement('a');
-      a.textContent = speaker.name;
-      h3.appendChild(a);
-
-      const p = document.createElement('p');
-      p.textContent = speaker.description;
-
-      const socialDiv = document.createElement('div');
-      socialDiv.className = 'social';
-
-      detailsDiv.appendChild(h3);
-      detailsDiv.appendChild(p);
-      detailsDiv.appendChild(socialDiv);
-
-      speakerContainer.appendChild(img);
-      speakerDiv.appendChild(speakerContainer);
-      speakerDiv.appendChild(detailsDiv);
-
-      speakerCol.appendChild(speakerDiv);
-      speakersRow.appendChild(speakerCol);
-    });
-  }
-  // Fetch the CSV file and display the speakers
-  fetch('./data/Embajadores copy.csv')
-    .then((response) => response.text())
-    .then((data) => {
-      const speakers = Papa.parse(data, { header: true }).data;
-      displaySpeakers(speakers);
+      speakersWrapper.append($card)
     })
-    .catch((error) => console.error('Error fetching CSV:', error));
+  }
+
+(async () => {
+  const respnse = await fetch("/data/speakers-data.json")
+  const speakersData = await respnse.json()
+
+  displaySpeakers(speakersData)
+})()
 </script>
 
-<!--==========================
-INICIO DE MOSAICOS
-============================-->
 <section id="speakers" class="wow fadeInUp">
   <div class="container">
     <div class="section-header">
@@ -427,53 +176,10 @@ INICIO DE MOSAICOS
           </div>
         </div>
       </div>
-
-      <!-- <div class="col-lg-6 col-md-6">
-        <div class="speaker">
-          <div class="speaker-container">
-            <img src="img/team_old/Juliana gomez.jpg" alt="Juliana Gomez" class="img-fluid people-img">
-            <div class="details">
-              <h3><a>Juliana Gomez</a></h3>
-              <p>Universidad del Cauca</p>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
   </div>
 </section>
-      
-    <style>
-      .people-img {
-        height: 300px; /* Adjust the height as desired */
-        width: 100%;
-        object-fit: cover; /* Maintain image aspect ratio and fill the container */
-      }
-  
-      .speaker-container {
-        position: relative;
-        overflow: hidden;
-        height: 300px; /* Set the height for the container to align all shadows */
-      }
-  
-      .speaker .details h3::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 15px; /* Set the height of the shadow */
-        background-color: rgba(0, 0, 0, 0); /* Change alpha to adjust shadow intensity */
-      }
-    </style>
-  
-    <!--==========================
-    INICIO DE MOSAICOS
-    ============================-->
-
-    <!-- HORARIO DEL EVENTO -->
-     <section id="schedule" class="section-with-bg">
-<!-- HORARIO DEL EVENTO -->
+<section id="schedule" class="section-with-bg">
 <section id="schedule" class="section-with-bg">
   <div class="container wow fadeInUp">
     <div class="section-header">
@@ -562,28 +268,19 @@ INICIO DE MOSAICOS
     </div>
   </div>
 </section>
-           
-      <!-- Agregar más actividades del Día 1 aquí -->
 
   </div>
 
-    <!-- Día 2 -->
   <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-2">
 
       <div class="row schedule-item">
         <div class="col-md-2"><time>10:00 AM</time></div>
         <div class="col-md-10">
-          <!-- <div class="speaker">
-            <img src="img/speakers/1.jpg" alt="Brenden Legros">
-          </div> -->
           <h4>Mentorias <span>Brenden Legros</span></h4>
           <p>Espacio abierto para mentorias</p>
         </div>
       </div>
 
-      <!-- Agregar más actividades del Día 2 aquí -->
-
-      <!-- Premiación -->
       <div class="row schedule-item">
         <div class="col-md-2"><time>06:00 PM</time></div>
         <div class="col-md-10">
@@ -598,43 +295,10 @@ INICIO DE MOSAICOS
   </div>
    </section>
 
-   <!--==========================
-     Venue Section
-
-   Anadiendo clase class="img-fluid gallery-img" para mantener imagenes del mismo tamano
-   ============================-->
    <section id="venue" class="wow fadeInUp">
 
-     <div class="container-fluid">
-
-       <div class="section-header">
-         <h2>UBICACION </h2>
-         <p>Informacion y galeria de fotos</p>
-       </div>
-
-       <div class="row no-gutters">
-         <div class="col-lg-6 venue-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.188889695421!2d-76.61226702545322!3d2.444067797534863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e300310ee83e535%3A0xa4b622b9d6d643d!2sCentro%20de%20Convenciones%20Casa%20de%20la%20Moneda!5e0!3m2!1ses!2sco!4v1727198867400!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-         </div>
-
-         <div class="col-lg-6 venue-info">
-           <div class="row justify-content-center">
-             <div class="col-11 col-lg-8">
-               <h3>Lugar</h3>
-               <p>El NASA Space Apps se Realizará en el Centro de Convenciones Casa de La Moneda</p>
-             </div>
-           </div>
-         </div>
-       </div>
-
-     </div>
-<!-- GALERY -->
-     
 <section>
   <div class="container-fluid venue-gallery-container">
-    <!-- <div class="row no-gutters"> -->
-
       <div class="col-lg-12 ">
         <div class="venue-gallery d-flex justify-content-center">
           <a href="img/venue-gallery/2.jpg" class="venobox" data-gall="venue-gallery" aria-label="Ver galería de fotos del Centro de Convenciones Casa de La Moneda - Sede del evento">
@@ -642,83 +306,9 @@ INICIO DE MOSAICOS
           </a>
         </div>
       </div>
-
-      <!-- <div class="col-lg-3 col-md-4">
-        <div class="venue-gallery">
-          <a href="img/venue-gallery/2.jpg" class="venobox" data-gall="venue-gallery">
-            <img src="img/venue-gallery/2.jpg" alt="" class="img-fluid gallery-image">
-          </a>
-        </div>
-      </div> -->
-<!-- 
-      <div class="col-lg-3 col-md-4">
-        <div class="venue-gallery">
-          <a href="img/venue-gallery/3.jpg" class="venobox" data-gall="venue-gallery">
-            <img src="img/venue-gallery/3.jpg" alt="" class="img-fluid gallery-image">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="venue-gallery">
-          <a href="img/venue-gallery/4.jpg" class="venobox" data-gall="venue-gallery">
-            <img src="img/venue-gallery/4.jpg" alt="" class="img-fluid gallery-image">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="venue-gallery">
-          <a href="img/venue-gallery/5.jpg" class="venobox" data-gall="venue-gallery">
-            <img src="img/venue-gallery/5.jpg" alt="" class="img-fluid gallery-image">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="venue-gallery">
-          <a href="img/venue-gallery/6.jpg" class="venobox" data-gall="venue-gallery">
-            <img src="img/venue-gallery/6.jpg" alt="" class="img-fluid gallery-image">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="venue-gallery">
-          <a href="img/venue-gallery/7.jpg" class="venobox" data-gall="venue-gallery">
-            <img src="img/venue-gallery/7.jpg" alt="" class="img-fluid gallery-image">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="venue-gallery">
-          <a href="img/venue-gallery/8.jpg" class="venobox" data-gall="venue-gallery">
-            <img src="img/venue-gallery/8.jpg" alt="" class="img-fluid gallery-image">
-          </a>
-        </div>
-      </div> -->
-
-    <!-- </div> -->
   </div>
 </section>
 
-<style>
-  .gallery-image {
-    width: 100%; /* Ajustar todas las imágenes al 100% del contenedor */
-    height: auto; /* Asegurar que las imágenes mantengan su relación de aspecto */
-    object-fit: cover; /* Hacer que las imágenes se ajusten proporcionalmente dentro del contenedor */
-  }
-</style>
-   <!-- <style>
-     .gallery-img {
-       height: 300px;
-       object-fit: contain ;
-     }
-   </style> -->
-   <!--==========================
-     gallery
-   ============================-->
    <section id="gallery" class="wow fadeInUp">
      <div class="container">
        <div class="section-header">
@@ -726,7 +316,7 @@ INICIO DE MOSAICOS
          <p>AESS Unicauca es NASA SpaceApps lead desde el 2020! Aqui algunos de nuestros eventos anteriores</p>
        </div>
      </div>
-   
+
      <div class="owl-carousel gallery-carousel">
        <a href="img/gallery/1.webp" class="venobox" data-gall="gallery-carousel" aria-label="Ver imagen 1 de eventos pasados NASA SpaceApps Popayán"><img class="gallery-image" src="img/gallery/1.webp" alt="Foto del evento NASA SpaceApps Popayán" loading="lazy"> </a>
        <a href="img/gallery/2.webp" class="venobox" data-gall="gallery-carousel" aria-label="Ver imagen 2 de eventos pasados NASA SpaceApps Popayán"><img class="gallery-image" src="img/gallery/2.webp" alt="Foto del evento NASA SpaceApps Popayán" loading="lazy"></a>
@@ -738,12 +328,6 @@ INICIO DE MOSAICOS
        <a href="img/gallery/8.webp" class="venobox" data-gall="gallery-carousel" aria-label="Ver imagen 8 de eventos pasados NASA SpaceApps Popayán"><img class="gallery-image" src="img/gallery/8.webp" alt="Foto del evento NASA SpaceApps Popayán" loading="lazy"></a>
      </div>
    </section>
-   
-
-   <!--==========================
-     Sponsors Section
-   ============================-->
-   
 
    <section id="supporters" class="fadeInUp">
     <div class="container">
@@ -772,37 +356,6 @@ INICIO DE MOSAICOS
 
     </div>
   </section>
-  
-  <style>
-    /* Center the images within the supporter-logo container and resize without cropping */
-    .supporter-logo img {
-      display: block;
-      margin: auto;
-      width: auto;
-      height: 100%;
-      max-width: 100%;
-      object-fit: contain;
-    }
-  
-    /* Optional: Add some space between the logo images */
-    .supporters-wrap {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 0 -1px; /* Adjust as needed */
-    }
-  
-    .supporter-logo {
-      flex: 1;
-      padding: 0 1px; /* Adjust as needed */
-      max-height: 1000px; /* Set the desired maximum height for the images */
-    }
-  </style>
-  
-  
-<!--==========================
- Preguntas y Respuestas Frecuentes (F.A.Q) Section
-============================-->
 <section id="faq" class="wow fadeInUp">
  <div class="container">
    <div class="section-header">
@@ -810,7 +363,6 @@ INICIO DE MOSAICOS
    </div>
    <div class="row justify-content-center">
      <div class="col-lg-9">
-       
        <details>
          <summary>¿Cuándo se llevará a cabo el NASA SpaceApps Challenge?</summary>
          <div class="answer">
@@ -903,45 +455,6 @@ INICIO DE MOSAICOS
     </div>
   </div>
 </section>
-
-
-   <!--==========================
-     videos
-   ============================-->
-   <style>
-    /* Set white background for all sections */
-    section {
-      background-color: #ffffff;
-    }
-  
-    /* Center the contents of the section horizontally and vertically */
-    #buy-tickets {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh; /* Set the section to occupy at least the full viewport height */
-    }
-  
-    /* Set max-width for the container to limit its width on larger screens */
-    .container.col-md-5 {
-      max-width: 560px;
-    }
-  
-    /* Remove default margin from iframe */
-    iframe {
-      display: block;
-      margin: 0;
-    }
-  
-    /* Responsive styles for the iframe */
-    @media (max-width: 768px) {
-      iframe {
-        width: 100%;
-        height: auto;
-      }
-    }
-  </style>
-  
   <section id="buy-tickets" class="section-with-bg wow fadeInUp">
     <div class="container col-md-5">
       <div class="section-header">
@@ -950,16 +463,9 @@ INICIO DE MOSAICOS
       <lite-youtube videoid="hys5yHyGbl0"></lite-youtube>
     </div>
   </section>
-  
-  
-  
-   <!--==========================
-     Contact Section
-   ============================-->
+
    <section id="contact" class="section-bg wow fadeInUp">
-
      <div class="container">
-
        <div class="section-header">
          <h2>Contáctanos</h2>
          <p>No dudes en comentar cualquier duda o inquietud a traves de los siguientes canales de comunicación</p>
@@ -975,14 +481,6 @@ INICIO DE MOSAICOS
            </div>
          </div>
 
-         <!-- <div class="col-md-4">
-           <div class="contact-phone">
-             <i class="ion-ios-telephone-outline"></i>
-             <h3>Telefono</h3>
-            
-           </div>
-         </div> -->
-
          <div class="col-md-4">
            <div class="contact-email">
              <i class="ion-ios-email-outline"></i>
@@ -992,42 +490,12 @@ INICIO DE MOSAICOS
          </div>
 
        </div>
-<!-- 
-       <div class="form">
-         <div id="sendmessage">Tu mensaje ha sido enviado. Muchas gracias!</div>
-         <div id="errormessage"></div>
-         <form action="" method="post" role="form" class="contactForm">
-           <div class="form-row">
-             <div class="form-group col-md-6">
-               <input type="text" name="name" class="form-control" id="name" placeholder="Nombre competo" data-rule="minlen:4" data-msg="Ingrese al menos un nombre" />
-               <div class="validation"></div>
-             </div>
-             <div class="form-group col-md-6">
-               <input type="email" class="form-control" name="email" id="email" placeholder="Tu email" data-rule="email" data-msg="Ingrese un email valido" />
-               <div class="validation"></div>
-             </div>
-           </div>
-           <div class="form-group">
-             <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Ingrese al menos un asunto de 8 caracteres" />
-             <div class="validation"></div>
-           </div>
-           <div class="form-group">
-             <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Escribe aqui tus dudas, comentarios o inquietudes" placeholder="Message"></textarea>
-             <div class="validation"></div>
-           </div>
-           <div class="text-center"><button type="submit">Send Message</button></div>
-         </form>
-       </div>
+      </div>
 
-     </div> -->
-   <!-- </section>#contact -->
+      </section>
+      </section>
+  </main>
 
- </main>
-
-
- <!--==========================
-   Footer
- ============================-->
  <footer id="footer">
    <div class="footer-top">
      <div class="container">
@@ -1037,21 +505,9 @@ INICIO DE MOSAICOS
            <img src="img/logo_inter.png" alt="Logo NASA SpaceApps Popayán - Hackathon Internacional de Ciencia y Tecnología">
            <p>La hackaton mas grande de ciencia y tecnologia a nivel global promovida por la NASA y las agencias espaciales mas importantes del mundos.</p>
          </div>
-      <!-- 
-         <div class="col-lg-3 col-md-6 footer-links">
-           <h4>Useful Links</h4>
-           <ul>
-             <li><i class="fa fa-angle-right"></i> <a href="#">Inicio</a></li>
-           </ul>
-         </div> -->
 
          <div class="col-lg-4 col-md-6 footer-contact">
            <h4>Contáctanos</h4>
-           <!-- <p>
-             A108 Adam Street <br>
-             New York, NY 535022<br>
-             United States <br> -->
-             <!-- <strong>Phone:</strong> +1 5589 55488 55<br> -->
              <strong>Email:</strong> aessnasaspace@gmail.com<br>
            </p>
 
@@ -1073,9 +529,7 @@ INICIO DE MOSAICOS
                <span class="sr-only">LinkedIn</span>
              </a>
            </div>
-
          </div>
-
        </div>
      </div>
    </div>
@@ -1085,35 +539,21 @@ INICIO DE MOSAICOS
        &copy; Copyright <strong>NASA SpaceApps Popayán </strong>. Todos los derechos reservados
      </div>
      <div class="credits">
-       <!--
-         All the links in the footer should remain intact.
-         You can delete the links only if you purchased the pro version.
-         Licensing information: https://bootstrapmade.com/license/
-         Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
-       -->
        Diseñado por <a href="https://fiet.unicauca.edu.co/aess/" aria-label="Visitar sitio web de AESS Universidad del Cauca" target="_blank" rel="noopener noreferrer">AESS Unicauca</a>
      </div>
    </div>
- </footer><!-- #footer -->
+ </footer>
 
  <a href="#" class="back-to-top" aria-label="Volver al inicio de la página"><i class="fa fa-angle-up" aria-hidden="true"></i><span class="sr-only">Volver arriba</span></a>
 
- <!-- JavaScript Libraries -->
  <script src="lib/jquery/jquery.min.js"></script>
- <script src="lib/jquery/jquery-migrate.min.js"></script>
- <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
  <script src="lib/easing/easing.min.js"></script>
  <script src="lib/superfish/hoverIntent.js"></script>
  <script src="lib/superfish/superfish.min.js"></script>
  <script src="lib/wow/wow.min.js"></script>
  <script src="lib/venobox/venobox.min.js"></script>
  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
- <!-- Contact Form JavaScript File -->
- <!-- <script src="contactform/contactform.js"></script> -->
-
- <!-- Template Main Javascript File -->
+ <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js"></script>
  <script src="js/main.js"></script>
 </body>
-
 </html>

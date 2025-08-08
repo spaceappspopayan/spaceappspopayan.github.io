@@ -6,4 +6,4 @@
 
 `npm install -g http-server`
 
-* Para despliegue local: `http-server` 
+* Para despliegue local: `http-server`

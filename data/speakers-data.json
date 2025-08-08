@@ -1,0 +1,32 @@
+[
+  {
+    "image": "img/team_2025/andres-munoz.webp",
+    "name": "Andrés Muñoz",
+    "organization": "Universidad del Cauca"
+  },
+  {
+    "image": "img/team_2025/camilo-oliveros.webp",
+    "name": "Camilo Oliveros",
+    "organization": "Universidad del Cauca"
+  },
+  {
+    "image": "img/team_2025/hernan-tobar.webp",
+    "name": "Hernán Tobar",
+    "organization": "Universidad del Cauca"
+  },
+  {
+    "image": "img/team_2025/johana.webp",
+    "name": "Johana Cardenas",
+    "organization": "Universidad del Cauca"
+  },
+  {
+    "image": "img/team_2025/johan-triana.webp",
+    "name": "Johan Triana",
+    "organization": "Universidad del Cauca"
+  },
+  {
+    "image": "img/team_2025/juan-cardenas.webp",
+    "name": "Juan Cárdenas",
+    "organization": "Universidad del Cauca"
+  }
+]
