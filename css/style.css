@@ -142,6 +142,7 @@
   font-weight: 500;
   color: white;
   transition: transform 250ms;
+  margin-bottom: 10px;
 }
 
 .place-link:hover {
@@ -341,6 +342,7 @@ h6 {
   margin-bottom: 60px;
   position: relative;
   padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 .section-header::before {
