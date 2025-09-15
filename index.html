@@ -213,11 +213,14 @@
             <p>Aquí tienes nuestro programa del evento</p>
           </div>
 
-          <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">27 de septiembre</a>
-            </li>
-          </ul>
+          <div class="day-selector-container text-center mb-4">
+            <label for="day-selector" class="day-selector-label">Selecciona el día:</label>
+            <select id="day-selector" class="form-control day-selector">
+              <option value="day-1" selected>27 de septiembre</option>
+              <option value="day-2">4 de octubre</option>
+              <option value="day-3">5 de octubre</option>
+            </select>
+          </div>
 
           <h3 class="sub-heading">Consulta cualquiera de nuestros embajadores para nuevas conferencias</h3>
 
@@ -324,37 +327,155 @@
 
             </div>
 
+            <!-- Día 2 - 4 de octubre -->
+            <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-2">
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>08:00 AM - 08:30 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Ingreso y registro de asistencia</h4>
+                  <p>Recepción de participantes y verificación de inscripción.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>08:30 AM - 09:30 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Charla corta de mentor</h4>
+                  <p><em>Cómo sobrevivir a una Space Apps</em>.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>09:30 AM - 10:15 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Charla sobre Stories</h4>
+                  <p>Immersive Data Stories.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>10:15 AM - 12:00 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Desarrollo de Hackathon</h4>
+                  <p>Trabajo en equipos y definición de alcances.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>12:00 PM - 01:15 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Intermedio / Zona de almuerzo</h4>
+                  <p>Pausa para alimentación y networking.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>01:15 PM - 04:15 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Desarrollo Hackathon</h4>
+                  <p>Iteraciones de prototipo y validación con mentores.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>04:15 PM - 04:45 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Break</h4>
+                  <p>Pausa breve.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>04:45 PM - 05:45 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Desarrollo Hackathon</h4>
+                  <p>Enfoque en cierre de entregables.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>05:45 PM - 06:15 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Retroalimentación de los mentores</h4>
+                  <p>Comentarios y siguientes pasos.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Día 3 - 5 de octubre -->
+            <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-3">
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>08:00 AM - 08:30 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Ingreso y registro de personas de asistencia</h4>
+                  <p>Recepción de participantes y verificación de asistencia.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>08:30 AM - 08:45 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Inicio de la etapa final del desafío</h4>
+                  <p>Organización de equipos y metas del día.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>08:45 AM - 12:00 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Desarrollo de Hackathon</h4>
+                  <p>Construcción final de prototipos y materiales de presentación.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>12:00 PM - 01:15 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Intermedio / Zona de almuerzo</h4>
+                  <p>Pausa para alimentación y organización de demos.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>01:45 PM - 02:00 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Presentación de evaluadores</h4>
+                  <p>Agenda de evaluación y criterios.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>02:00 PM - 05:15 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Evaluación de proyectos</h4>
+                  <p>Demostraciones y sesiones de preguntas y respuestas.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>05:15 PM - 05:45 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Entrega de incentivos</h4>
+                  <p>Reconocimiento a equipos y menciones especiales.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>05:45 PM - 06:00 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Agradecimientos y cierre</h4>
+                  <p>Cierre oficial del evento.</p>
+                </div>
+              </div>
+
+            </div>
 
           </div>
-        </div>
         </div>
       </section>
-
-      </div>
-
-      <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-2">
-
-        <div class="row schedule-item">
-          <div class="col-md-2"><time>10:00 AM</time></div>
-          <div class="col-md-10">
-            <h4>Mentorias <span>Brenden Legros</span></h4>
-            <p>Espacio abierto para mentorias</p>
-          </div>
-        </div>
-
-        <div class="row schedule-item">
-          <div class="col-md-2"><time>06:00 PM</time></div>
-          <div class="col-md-10">
-            <h4>Premiación de NASA SpaceApps</h4>
-            <p>Celebra el éxito y la creatividad de los participantes y equipos ganadores en la ceremonia de premiación
-              de NASA SpaceApps.</p>
-          </div>
-        </div>
-
-      </div>
-
-      </div>
-      </div>
     </section>
 
     <section id="venue" class="wow fadeInUp">
