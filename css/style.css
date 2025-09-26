@@ -1323,7 +1323,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .supporter-logo {
-  height: 120px;
+  height: auto;
   padding: 16px;
   display: flex;
   justify-content: center;
